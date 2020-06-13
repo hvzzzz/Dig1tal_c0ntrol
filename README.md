@@ -1,2 +1,2 @@
-# Dig1tal_c0ntrol
-Stuff done for Digital Control course
+# Digital Control at BUAP
+Stuff done for Digital Control course spring 2020 semester
