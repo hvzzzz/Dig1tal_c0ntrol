@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{newtxtext,newtxmath}
+\usepackage{listings}
+\usepackage[usenames]{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{azul1}{RGB}{141,198,163}
+\definecolor{azul2}{RGB}{24,107,122}
+\definecolor{verde1}{RGB}{44,186,34}
+\usepackage{textcomp}
+\lstset{
+		frame=Ltb,
+		framerule=1pt,
+		framextopmargin=3pt,
+		framexbottommargin=3pt,
+		framexleftmargin=0.4cm,
+		framesep=0pt,
+		rulesep=.4pt,
+		backgroundcolor=\color{gray97},
+		rulesepcolor=,
+        tabsize=4,
+        rulecolor=\color{azul1},
+        basicstyle=\scriptsize\rmfamily,
+        upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\rmfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+        keywordstyle=\bfseries,
+		numbers=left,
+		numbersep=15pt,
+		numberstyle=\tiny,
+		numberfirstline = false,
+		breaklines=true,
+		}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{natbib} %citas bibliograficas estilo APA :p
+\usepackage{eso-pic}
+\usepackage{avant}
+\usepackage[top=2cm,bottom=2cm,left=2.5cm,right=3cm,headsep=8pt,a4paper]{geometry}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[LE,RO]{}
+%\fancyhead[RE,LO]{Robótica}
+%\fancyfoot[CE,CO]{\leftmark}
+%\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\usepackage{tabu}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\graphicspath{ {images/} }
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{amsmath,tikz}
+\usetikzlibrary{matrix}
+\usepackage{steinmetz}
+\newcommand*{\horzbar}{\rule[0.05ex]{2.5ex}{0.5pt}}
+\usepackage{calc}
+\date{\today}
+
+
+\begin{document}
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\center
+\textsc{\LARGE  Benemérita Universidad \\[0.2cm] Autónoma de Puebla}\\[1.5cm] 
+%\includegraphics[width=4cm]{IMAGENES/escudo}\\[1cm]
+\textsc{\Large Facultad de Ciencias de la Electrónica}\\[0.5cm] 
+\textsc{\large Licenciatura en Electrónica}\\[0.5cm]
+\HRule \\[0.4cm]
+{ \huge \bfseries Cinemática}\\[0.4cm] 
+\HRule \\[1.5cm]
+\begin{minipage}{\textwidth}
+\center 
+\textsc{\LARGE Robótica}\\[1.7cm] 
+\emph{Profesor:} \\
+Dr. Fernando Reyes Cortés \\[1cm]
+\begin{tabular}{ll}
+\emph{Alumno:} & \emph{Número de Matrícula:}\\
+Hanan Ronaldo Quispe Condori  & 555010653\\
+\end{tabular}
+\end{minipage}\\[2cm]
+\today
+\end{titlepage}
+
+\newpage
+Comprobación usando MATLAB
+\lstinputlisting[language=Matlab]{tarea2.m}
+\lstinputlisting[language=Matlab]{diary}
+\end{document}

@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{newtxtext,newtxmath}
+\usepackage{listings}
+\usepackage[usenames]{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{azul1}{RGB}{141,198,163}
+\definecolor{azul2}{RGB}{24,107,122}
+\definecolor{verde1}{RGB}{44,186,34}
+\usepackage{textcomp}
+\lstset{
+		frame=Ltb,
+		framerule=1pt,
+		framextopmargin=5pt, %margen de arriba
+		framexbottommargin=5pt, %margen de abajo
+		framexleftmargin= -2pt, %separacion del margen izquierdo
+		framesep=2pt,
+		rulesep=0.2pt,
+		backgroundcolor=\color{gray97},
+		rulesepcolor=,
+        tabsize=4,
+        rulecolor=\color[RGB]{106, 182, 217}, %AZUL
+        upquote=true,
+        aboveskip={1.5\baselineskip}, %despues de la linea de texto
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        basicstyle=\scriptsize\ttfamily\color[RGB]{39, 100, 46}, %Numeros de lineas, simbolos, puntos y coma y demas
+        identifierstyle=\ttfamily\color[RGB]{56, 140, 189}, %variables
+        commentstyle=\color[RGB]{62, 179, 101}, %comentarios
+        stringstyle=\color[RGB]{247, 165, 42}, %impresiones
+        keywordstyle=\bfseries\color[RGB]{237, 118, 150}, %funciones
+        %
+		numbers=left,
+		numbersep=-7pt, %separacion del numero
+		numberstyle=\tiny,
+		numberfirstline = false,
+		breaklines=true,
+		}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{natbib} %citas bibliograficas estilo APA :p
+\usepackage{eso-pic}
+\usepackage{avant}
+\usepackage[top=2cm,bottom=2cm,left=2.5cm,right=3cm,headsep=8pt,a4paper]{geometry}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[LE,RO]{}
+%\fancyhead[RE,LO]{Robótica}
+%\fancyfoot[CE,CO]{\leftmark}
+%\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\usepackage{tabu}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\graphicspath{ {images/} }
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{amsmath,tikz}
+\usetikzlibrary{matrix}
+\usepackage{steinmetz}
+\newcommand*{\horzbar}{\rule[0.05ex]{2.5ex}{0.5pt}}
+\usepackage{calc}
+\date{\today}
+
+
+\begin{document}
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\center
+\textsc{\LARGE  Benemérita Universidad \\[0.2cm] Autónoma de Puebla}\\[1.5cm] 
+%\includegraphics[width=4cm]{IMAGENES/escudo}\\[1cm]
+\textsc{\Large Facultad de Ciencias de la Electrónica}\\[0.5cm] 
+\textsc{\large Licenciatura en Electrónica}\\[0.5cm]
+\HRule \\[0.4cm]
+{ \huge \bfseries Cinemática}\\[0.4cm] 
+\HRule \\[1.5cm]
+\begin{minipage}{\textwidth}
+\center 
+\textsc{\LARGE Robótica}\\[1.7cm] 
+\emph{Profesor:} \\
+Dr. Fernando Reyes Cortés \\[1cm]
+\begin{tabular}{ll}
+\emph{Alumno:} & \emph{Número de Matrícula:}\\
+Hanan Ronaldo Quispe Condori  & 555010653\\
+\end{tabular}
+\end{minipage}\\[2cm]
+\today
+\end{titlepage}
+
+\newpage
+
+\textbf{A)} Demostrar la Controlabilidad Completa del sistema.
+\vspace{10mm}
+
+Usaremos la función $ctrb$ para calcular directamente la matriz de controlabilidad del sistema dado seguidamente usaremos la función $rank$ para calcular el rango de esta matriz.
+Sea el siguiente script de MATLAB
+\lstinputlisting[language=Matlab]{tarea2.m}
+El resultado de este script es el siguiente.
+\lstinputlisting[language=Matlab]{diary1}
+
+Tenemos el rango de la matriz de controlabilidad es $5$ por lo tanto queda demostrada la controlabilidad completa del sistema.
+\vspace{10mm}
+
+\textbf{B)} Demostrar la Observabilidad Completa del sistema.
+\vspace{10mm}
+
+Usaremos la función $obsv$ para calcular directamente la matriz de observabilidad del sistema dado seguidamente usaremos la función $rank$ para calcular el rango de esta matriz.
+Sea el siguiente script de MATLAB
+\lstinputlisting[language=Matlab]{a.m}
+El resultado de este script es el siguiente.
+\lstinputlisting[language=Matlab]{diary2}
+
+Tenemos el rango de la matriz de observabilidad es $5$ por lo tanto queda demostrada la observabilidad completa del sistema.
+
+\vspace{10mm}
+\textbf{C)} Calcular la matriz de ganacias del Observador de Estado.
+\vspace{10mm}
+
+Usaremos la operaciones simbolicas para calcular esta matriz de ganancias, los valores propios deseados se encuentran en el vector P.
+\lstinputlisting[language=Matlab]{observ.m}
+En la linea 9 se usará la ecuación dada en la hoja de teoria.
+\lstinputlisting[language=Matlab]{diary}
+Apartir de este punto se tiene que calcular el determinante de la matriz de error e igualar este a a la matriz caracteristica con los polos deseados esta ecuación se encuentra en la linea 33, seguidamente se usara la función $solve$ para calcular las ganancias deseadas. para simplificar estas operaciones se uso la función $place$ dando la siguiente matriz de ganancias.
+\lstinputlisting[language=Matlab]{diary3}
+\end{document}

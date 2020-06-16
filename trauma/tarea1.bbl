@@ -1,0 +1,110 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Dorf%
+, Bishop%
+, Canto%
+, Canto%
+\BCBL {}\ \BBA {} Dormido%
+}{%
+Dorf%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+dorf2005sistemas}
+\APACinsertmetastar {%
+dorf2005sistemas}%
+\begin{APACrefauthors}%
+Dorf, R\BPBI C.%
+, Bishop, R\BPBI H.%
+, Canto, S\BPBI D.%
+, Canto, R\BPBI D.%
+\BCBL {}\ \BBA {} Dormido, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {Sistemas de control moderno} {Sistemas de control moderno}.
+\newblock
+\APACaddressPublisher{}{Pearson Educaci{\'o}n}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ogata%
+}{%
+Ogata%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+ogata2003ingenieria}
+\APACinsertmetastar {%
+ogata2003ingenieria}%
+\begin{APACrefauthors}%
+Ogata, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2003}.
+\newblock
+\APACrefbtitle {Ingenier{\'\i}a de control moderna} {Ingenier{\'\i}a de control
+  moderna}.
+\newblock
+\APACaddressPublisher{}{Pearson Educaci{\'o}n}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.com.pe/books?id=QK148EPC\_m0C}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Proakis%
+\ \BBA {} Manolakis%
+}{%
+Proakis%
+\ \BBA {} Manolakis%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+proakis1996digital}
+\APACinsertmetastar {%
+proakis1996digital}%
+\begin{APACrefauthors}%
+Proakis, J\BPBI G.%
+\BCBT {}\ \BBA {} Manolakis, D\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1996}.
+\newblock
+\APACrefbtitle {Digital signal processing} {Digital signal processing}.
+\newblock
+\APACaddressPublisher{}{Prentice Hall New Jersey}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schafer%
+\ \BBA {} Oppenheim%
+}{%
+Schafer%
+\ \BBA {} Oppenheim%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+schafer1989discrete}
+\APACinsertmetastar {%
+schafer1989discrete}%
+\begin{APACrefauthors}%
+Schafer, R\BPBI W.%
+\BCBT {}\ \BBA {} Oppenheim, A\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1989}.
+\newblock
+\APACrefbtitle {Discrete-time signal processing} {Discrete-time signal
+  processing}.
+\newblock
+\APACaddressPublisher{}{Prentice Hall Englewood Cliffs, NJ}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
